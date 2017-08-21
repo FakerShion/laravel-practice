@@ -13,7 +13,7 @@ We're not too concerned about this part in terms of evaluation.
 
 1. Clone this repository
 2. Copy `.env.example` file to `.env`
-3. Migrate and seed the database using `php artisan --seed`
+3. Migrate and seed the database using `php artisan migrate:refresh --seed`
 4. Navigate to http://laravel-assessment.dev
 
 ## Assessment
