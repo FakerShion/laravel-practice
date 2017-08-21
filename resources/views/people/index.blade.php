@@ -12,13 +12,20 @@
                 <thead>
                     <tr>
                         <th>Name</th>
+                        <th>Email</th>
                     </tr>
+
                 </thead>
                 <tbody>
 
                     @foreach($people as $person)
                         <tr>
                               <td>{{$person->name}}</td>
+                            <td>
+                                @if(!empty($person->email))
+                                {{$person->email}}
+                                 @endif
+                            </td>
                             <td><a href="/edit/{{$person->id}}">edit</a></td>
                         </tr>
                     @endforeach
