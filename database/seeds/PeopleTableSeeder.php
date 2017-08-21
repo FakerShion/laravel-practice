@@ -31,6 +31,7 @@ class PeopleTableSeeder extends Seeder
         Person::create([
             'id' => $i,
             'name' => $this->faker->name,
+            'email' => $this->faker->email,
             'deleted_at' => $deletedAt,
         ]);
     }

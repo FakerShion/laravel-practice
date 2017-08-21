@@ -15,11 +15,12 @@ class CreatePeopleTable extends Migration
     {
         Schema::create('people', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('email');
             $table->text('name');
-            $table->string('email')->unique();
             $table->timestamps();
             $table->softDeletes();
         });
+
     }
 
     /**
